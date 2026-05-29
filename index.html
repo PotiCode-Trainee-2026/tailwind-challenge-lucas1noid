@@ -1,13 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwindtemplate</title>
+    <title>Logitech G403 HERO | Mouse Gamer</title>
   </head>
-  <body>
-    <div class="bg-pink-500">oi galera :D</div>
+  <body class="bg-[#111111] text-zinc-300 font-sans antialiased flex flex-col min-h-screen selection:bg-cyan-500 selection:text-white">
+    
+    <nav class="bg-[#111111]/90 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center gap-3">
+            <img src="./src/assets/logicon.png" alt="Logitech G" class="w-10 h-10 object-contain">
+          </div>
+          <div class="hidden md:flex space-x-10 items-center">
+            <a href="#hero-sensor" class="text-zinc-400 hover:text-white transition-colors duration-200 font-bold uppercase tracking-widest text-sm">Sensor HERO</a>
+            <a href="#design" class="text-zinc-400 hover:text-white transition-colors duration-200 font-bold uppercase tracking-widest text-sm">Design</a>
+            <a href="#recurso" class="text-zinc-400 hover:text-white transition-colors duration-200 font-bold uppercase tracking-widest text-sm">Recursos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative overflow-hidden flex items-center min-h-[calc(100vh-80px)]">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-900/20 rounded-full blur-[120px] -z-10"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+          <div class="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left z-10">
+            <h2 class="text-cyan-500 font-black tracking-[0.2em] uppercase mb-4 text-sm md:text-base">Equipado para Vencer</h2>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase leading-none">
+              G403<br/>HERO
+            </h1>
+            <p class="text-xl text-zinc-400 mb-10 max-w-lg">
+              Com o sensor de última geração HERO 25K, precisão avançada e design projetado para o conforto dos maiores jogadores do mundo.
+            </p>
+            <a href="https://www.logitechg.com/pt-br/shop/p/g403-hero-gaming-mouse" target="_blank" rel="noopener noreferrer" class="bg-cyan-500 hover:bg-cyan-400 text-black px-10 py-4 rounded font-black text-lg transition-colors uppercase tracking-widest shadow-[0_0_20px_rgba(0,184,252,0.3)]">
+              Comprar Agora
+            </a>
+          </div>
+          
+          <div class="lg:w-1/2 w-full flex justify-center">
+            <img src="./src/assets/g403-hero.png" alt="Logitech G403 HERO" class="w-full h-auto drop-shadow-[0_0_30px_rgba(37,99,235,0.15)] hover:scale-105 transition-transform duration-500 border border-zinc-800 rounded-xl">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      
+      <section id="hero-sensor" class="min-h-screen flex items-center bg-[#161616] scroll-mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 w-full">
+              <img src="./src/assets/sensor.png" alt="Sensor HERO 25K" class="w-full h-auto object-cover rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500 border border-zinc-800">
+            </div>
+            <div class="lg:w-1/2">
+              <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-6">Sensor<br/><span class="text-cyan-500">HERO 25K</span></h2>
+              <p class="text-lg leading-relaxed text-zinc-400 mb-6">
+                Conheça o sensor de última geração. Com rastreamento 1:1, até mais de 400 IPS e sensibilidade máxima de 100 a 25.600 DPI. 
+                Sem suavização, filtragem ou aceleração.
+              </p>
+              <p class="text-lg leading-relaxed text-zinc-400">
+                A resposta perfeita que você precisa para cravar a mira, garantir flick shots consistentes ou manter a frieza segurando cada pixel em jogo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="design" class="min-h-screen flex items-center bg-[#111111] scroll-mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+            <div class="lg:w-1/2 w-full">
+              <img src="./src/assets/peso-403.png" alt="Peso de 10g removível" class="w-full h-auto object-cover rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500 border border-zinc-800">
+            </div>
+            <div class="lg:w-1/2">
+              <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-6">Conforto<br/>Supremo</h2>
+              <p class="text-lg leading-relaxed text-zinc-400 mb-6">
+                Com empunhaduras de borracha moldadas nas laterais para oferecer a você maior controle, o G403 foi desenvolvido para se ajustar à sua mão, garantindo horas de conforto.
+              </p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start gap-4">
+                  <div class="w-2 h-2 rounded-full bg-cyan-500 mt-2"></div>
+                  <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider">Peso Ajustável</h4>
+                    <p class="text-zinc-400 text-sm">Peso opcional removível de 10g para o balanço perfeito.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-2 h-2 rounded-full bg-cyan-500 mt-2"></div>
+                  <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider">6 Botões Programáveis</h4>
+                    <p class="text-zinc-400 text-sm">Configure ações complexas através do software Logitech G HUB.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recurso" class="min-h-screen flex items-center bg-[#161616] scroll-mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-[#111] p-10 rounded-lg border border-zinc-800 hover:border-cyan-500/50 transition-colors">
+              <h3 class="text-3xl font-black text-white uppercase mb-4 tracking-tight">Lightsync RGB</h3>
+              <p class="text-zinc-400 leading-relaxed mb-6">
+                A iluminação RGB de espectro completo com tecnologia de última geração reage às ações no jogo e ao áudio. Personalize animações de cerca de 16,8 milhões de cores com o software para jogos G HUB.
+              </p>
+              <img src="./src/assets/rgb-403.png" alt="Iluminação Lightsync RGB" class="w-full h-55 object-cover rounded-lg shadow-md border border-zinc-800">
+            </div>
+
+            <div class="bg-[#111] p-10 rounded-lg border border-zinc-800 hover:border-cyan-500/50 transition-colors">
+              <h3 class="text-3xl font-black text-white uppercase mb-4 tracking-tight">Desempenho Avançado</h3>
+              <p class="text-zinc-400 leading-relaxed mb-6">
+                Com uma taxa de transmissão de 1 ms, o G403 é até 8x mais rápido que os mouses normais. O tensionamento mecânico dos botões os mantêm prontos para disparar sob menor força.
+              </p>
+              <img src="./src/assets/botoes.png" alt="Botões mecânicos G403" class="w-full h-55 object-cover rounded-lg shadow-md border border-zinc-800">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black py-16 border-t border-zinc-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="./src/assets/logicon.png" alt="Logitech G" class="w-8 h-8 object-contain">
+          <span class="font-black uppercase tracking-[0.2em] text-white">Logitech G</span>
+        </div>
+        <div class="text-zinc-600 text-sm font-medium">
+          Projeto acadêmico poticode - Tailwind CSS - Desenvolvido por <a href="https://github.com/lucas1noid" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-500 transition-colors">Lucas1noid</a>
+        </div>
+        <div class="flex gap-6 text-sm uppercase font-bold tracking-widest text-zinc-500">
+          <a href="https://www.logitechg.com/pt-br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Site Oficial</a>
+          <a href="https://www.logitechg.com/pt-br/shop/p/g403-hero-gaming-mouse" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-500 transition-colors">Comprar</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
-  <script type="module" src="./src/main.js"></script>
 </html>
